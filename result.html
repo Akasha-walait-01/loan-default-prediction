@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .result {
+            background: rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            padding: 40px;
+            border-radius: 16px;
+            font-size: 24px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        a {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 12px 25px;
+            background: white;
+            color: #185a9d;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        a:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="result">
+        <h2>🔍 Prediction Result</h2>
+        <p>{{ prediction_text }}</p>
+        <br>
+        <a href="/predict">🔁 Try Again</a>
+        <a href="/welcome">🏠 Back to Home</a>
+    </div>
+</body>
+</html>

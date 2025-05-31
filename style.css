@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;  /* Light background for a clean look */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container,
+.form-container,
+.result-container,
+.history-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #2e3a59;  /* Deep blue for titles */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #1d8e56;  /* Green for success-related information */
+}
+
+p,
+ul {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    color: #2e3a59;
+}
+
+/* Buttons */
+button,
+a.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #1d8e56;  /* Green for positive action buttons */
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+a.button:hover {
+    background-color: #157d43;  /* Darker green on hover */
+}
+
+/* Form Layout */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2e3a59;
+}
+
+form input,
+form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="number"] {
+    width: 100%;
+}
+
+form select {
+    width: 100%;
+}
+
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #1d8e56;  /* Green border on focus */
+    outline: none;
+}
+
+/* Form Submit Button */
+form button {
+    width: 100%;
+    background-color: #1d8e56;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Result Section */
+.result-container {
+    text-align: center;
+    background-color: #f4fff5;  /* Light green background for results */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.result-container p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.result-container .button {
+    width: 200px;
+    margin-top: 30px;
+}
+
+/* History Section */
+.history-container {
+    text-align: center;
+}
+
+.history-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.history-container table,
+.history-container th,
+.history-container td {
+    border: 1px solid #ddd;
+}
+
+.history-container th,
+.history-container td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.history-container thead {
+    background-color: #1d8e56;  /* Green header for history table */
+    color: #ffffff;
+}
+
+.history-container tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.history-container tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.history-container td {
+    font-size: 16px;
+}
+
+.history-container .button {
+    width: 200px;
+    margin-top: 30px;
+}
+
+/* Link Styling */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container,
+    .form-container,
+    .result-container,
+    .history-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    form input,
+    form select {
+        font-size: 14px;
+    }
+
+    button,
+    a.button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .history-container table th,
+    .history-container table td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    form input,
+    form select {
+        font-size: 12px;
+    }
+
+    button,
+    a.button {
+        font-size: 16px;
+    }
+
+    .history-container table th,
+    .history-container table td {
+        font-size: 12px;
+    }
+}
